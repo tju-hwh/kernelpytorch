@@ -1,0 +1,21 @@
+Performing C++ SOURCE FILE Test CAFFE2_NEED_TO_TURN_OFF_DEPRECATION_WARNING failed with the following output:
+Change Dir: /home/tank/huangwenhao/pytorch/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_28b1a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_28b1a.dir/build.make CMakeFiles/cmTC_28b1a.dir/build
+gmake[1]: Entering directory '/home/tank/huangwenhao/pytorch/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_28b1a.dir/src.cxx.o
+/usr/bin/c++ -DCAFFE2_NEED_TO_TURN_OFF_DEPRECATION_WARNING  -std=c++14 -o CMakeFiles/cmTC_28b1a.dir/src.cxx.o -c /home/tank/huangwenhao/pytorch/build/CMakeFiles/CMakeTmp/src.cxx
+/home/tank/huangwenhao/pytorch/build/CMakeFiles/CMakeTmp/src.cxx:1:10: fatal error: glog/stl_logging.h: No such file or directory
+    1 | #include <glog/stl_logging.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_28b1a.dir/build.make:78: CMakeFiles/cmTC_28b1a.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/tank/huangwenhao/pytorch/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_28b1a/fast] Error 2
+
+
+Source file was:
+#include <glog/stl_logging.h>
+    int main(int argc, char** argv) {
+      return 0;
+    }
